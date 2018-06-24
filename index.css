@@ -1,0 +1,206 @@
+/* 输入框 */
+body {
+    background-color: #FFFDE7;
+    margin: 0px;
+    padding: 0px;
+    font-family: Chalkboard, SansSerif;
+}
+
+.input {
+    height: 60px;
+    width: 100%;
+    border-bottom: solid rgb(231, 228, 228) 1px;
+    position: relative;
+}
+
+
+.titles {
+    background-color: #00838F;
+    color: #E0F7FA;
+    margin-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    box-shadow: 1px 5px 18px #0097A7;
+
+    opacity: 0.88;
+}
+.allContent {
+    margin:0 auto;
+    width: 80%;
+    height: auto;
+    border:1px solid rgb(250, 246, 246);
+    margin-top: 30px;
+    box-shadow: #666 1px 3px 12px;
+}
+
+
+.image {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    visibility: hidden;
+    top:15px;
+}
+.image+label {
+    margin-top:15px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;  
+    background:url(image/down_thin.png) no-repeat;
+
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: red;
+    /* placeholder字体大小  */
+    font-size: 12px;
+    /* placeholder位置  */
+    text-align: right;
+}
+
+.inputContent {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 4px;
+    position: absolute;
+    text-align: center;
+}
+
+.inputContents {
+    left: 30px;
+    width: 100%;
+    height: 45px;
+    border-style: none;
+    bottom: 10px;
+    outline:none;
+    font-size: 19px;
+}
+
+/* 列表 */
+.list {
+    vertical-align: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.listDiv {
+    width: 100%;
+    height: auto;
+}
+.listContent {
+    display: grid;
+    grid-template-columns:5% 95%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: auto;
+    border-bottom: solid rgb(231, 228, 228) 1px;
+    white-space: pre-line;
+    word-break: break-all;
+}
+.checkboxContent {
+    grid-row: 1;
+    width: 24px;
+    height: 24px;
+    left:25%;
+    margin-top: 10px;
+    z-index: 99;
+    -webkit-appearance: none;
+    appearance: none;
+    outline:none;
+       
+}
+
+.labelImg {
+    position: absolute;
+    margin-top: 10px;
+    left: 25.3%;
+    background: url(image/gray_circle.png) no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.spanContent {
+
+    font-family: inherit;
+    margin-top: 9px;
+    grid-row: 1;
+    height: auto;
+    border-style: none;
+    font-size: 18px;
+    resize: none;
+    overflow-y: hidden;
+}
+.deleteImg {
+    left: 73%;
+    position: absolute;
+    width: 24px;
+    display: none;
+    margin-top: 9px;
+
+}
+
+.divContent {
+    vertical-align: center;
+    width: 100%;
+    height: 32px;
+}
+.number {
+    position: absolute;
+    left:25.5%;
+    margin-top: 5px;
+    color: #8B8878;
+}
+.labelSpan {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    left:27%;
+    margin-top: 5px;
+    color: #8B8878;
+}
+.all {
+    position: absolute;
+    left: 40%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #8B8878;
+}
+.active {
+    position: absolute;
+    left:45%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #8B8878;
+}
+.completed {
+    position: absolute;
+    left:50%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #8B8878;
+}
+.clear {
+    position: absolute;
+    left:64%;
+    display: none;
+    margin-top: 5px;
+    color: #8B8878;
+}
+
+#info {
+    margin: 65px auto 0;
+    color: #a6a6a6;
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+#info a {
+    color: inherit;
+}
